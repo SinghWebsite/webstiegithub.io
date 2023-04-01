@@ -1,0 +1,44 @@
+﻿.glyphicon
+{
+    margin-right:4px !important; /*override*/
+}
+
+.pagination .glyphicon
+{
+    margin-right:0px !important; /*override*/
+}
+
+.pagination a
+{
+    color:#555;
+}
+
+.panel ul
+{
+    padding:0px;
+    /*margin:0px;*/
+    list-style:none;
+}
+
+.EventPanel .panel-body {
+    padding:1px !important;
+}
+
+.EventPanel a {
+    color:#d73814;
+}
+
+.EventPanel .btn-default:hover {
+    color: #107FC9;
+    background-color: transparent !important;
+    border-color: #ffffff;
+}
+
+
+
+.news-item
+{
+    /*padding:4px 4px;*/
+    /*margin:0px;*/
+    /*border-bottom:1px dotted #555;*/ 
+}

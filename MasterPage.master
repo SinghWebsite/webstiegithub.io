@@ -1,0 +1,580 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <meta charset="UTF-8">
+
+    <title>Bank</title><!-- mobile responsive meta -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .btn{
+            position: relative;
+            background-color: darkred;
+            width: 100%;
+            border: none;
+            color: white;
+            padding: 7%;
+             
+        }
+        .btn:hover{
+            position: relative;
+            color: white;
+        }
+        @media screen and (max-width: 620px){
+            .defaultmainmenu{
+                position: relative;
+                margin-top: 8%;
+            }
+        }
+        @media screen and (max-width: 620px){
+            .play{
+                position: relative;
+                margin-top: -5%;
+                margin-bottom: 5%;
+                text-align: right;
+            }
+        }
+        @media screen and (max-width: 620px){
+            .plays{
+                position: relative;
+                height: 30px;
+            }
+        }
+         
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="top-bar" style="background:  #B22222;">
+            <div class="container">
+                <div class="clearfix">
+
+
+                    <div class="right-column float_left">
+                        <ul class="list_inline contact-info">
+                            <li style="color: white;font-weight: bold;font-size: 14px;"><a href="tel:18002743011" style="color: white;"><span class="icon-phone" style="color: white;font-size: 14px;"></span> Toll Free : 18002743011</a></li>
+
+
+                            <li style="color: white;font-weight: bold;font-size: 14px;"><a href="https://mail.google.com/mail/u/0/#search/gm_ucb%40ucblb.org" style="color: white"><span class="icon-back" style="color: white;font-size: 14px;"></span>  gm_ucb@ucblb.org</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="right-column float_right">
+                         <ul class="list_inline contact-info">
+                            <a href="BranchLocation.aspx"><li style="color: white;font-weight: bold;font-size: 14px;">  Branch Locator</li></a>
+
+
+                            <a href="AtmLocation.aspx"><li style="color: white;font-weight: bold;font-size: 14px;">   ATM Locator</li></a>
+                             <a href=""><li style="color: white;font-weight: bold;font-size: 14px;">  Career With Us</li></a>
+                             <a href="https://www.facebook.com/UcbBly?mibextid=ZbWKwL"><i class="fa fa-facebook" style="color: white;margin-left: 1%;"></i></a>
+                             <a href="https://twitter.com/?lang=en-in"><i class="fa fa-twitter" style="color: white;margin-left: 83%;"></i></a>
+                             <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="color: white;margin-left: 200%;height: 22px;"></i></a>
+                              
+                        </ul>
+                         
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section   style="background: white;margin-bottom: -2.5%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="main-logo plays" style="margin-top: -0.1%;margin-top: 0.8%;">
+                            <a href="indexaspx.aspx"><img alt="" src="Bank-Image/Logo/logomy111.png" height="35px" width="500px;"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-2">
+                    <div class="main-logo play" style="margin-top: -1%;">
+                         <a href="https://play.google.com/store/apps/details?id=com.sil.ucobbank" style="color: green;font-size: 20px;font-weight: bold"><img alt="" src="Bank-Image/Logo/bankapp.png" height="70px;" ></a>
+                    </div></div>
+
+
+                     
+                </div>
+            </div>
+        </section>
+
+
+          <section class="theme_menu stricky" style="background-color:  #B22222;position: fixed;width: 100%;">
+            <div class="container">
+                <div class="row">
+                     
+
+
+                    <div class="col-md-12 menu-column">
+                        <nav class="defaultmainmenu"   id="main_menu">
+                            <ul class="defaultmainmenu-menu" style="margin-top: -2%;margin-bottom: -2%;width: 100%;">
+                                <li>
+                                    <a href="indexaspx.aspx">Home</a>
+                                </li>
+
+
+                                <li class="active">
+                                    <a href="#">About Us</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="BankHistory.aspx">BANK HISTORY</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="ChiefPromoterMessage.aspx">CHIEF PROMOTER MESSAGE</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="ChairpersonMessage.aspx">CHAIRPERSON MESSAGE</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="CeoMessage.aspx">CEO MESSAGE</a>
+                                        </li>
+
+
+                                         
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#">Our Deposits</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="SavingAccount.aspx">SAVING ACCOUNT</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="CurrentAccount.aspx">CURRENT ACCOUNT</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="BasicBankAccount.aspx">BASIC BANK-ACCOUNT</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="DailyDepositScheme.aspx">DAILY DEPOSIT SCHEME</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="FixedDeposit.aspx">FIXED DEPOSIT</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="#">Our Loans</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="HousingLoan.aspx">HOUSING LOAN</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="VehicleLoan.aspx">VEHICLE LOAN</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="LoanAginstProperty.aspx">LOAN AGAINST PROPERTY</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="DoctorPlusLoan.aspx">DOCTOR PLUS LOAN</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="TeacherLoan.aspx">TEACHER LOAN / PERSONAL LOAN</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="LoanToMsme.aspx">LOAN TO MSME</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="FDLoan.aspx">FD LOAN</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="LoanAgainst.aspx">LOAN AGAINST LIC / KVP / NSC</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="LimitAgainstProperty.aspx">LIMIT AGAINST PROPERTY</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="UrbaTraders.aspx">URBA TRADERS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                 <li>
+                                    <a href="#">Our Services</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="NEFT.aspx">NEFT/RTGS</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="NEFT.aspx">ATM SERVICE</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="NEFT.aspx">MOBILE BANKING SERVICE</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="NEFT.aspx">LOCKER SERVICE</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="NEFT.aspx">E COM, POS, NACH SERVICE</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="NEFT.aspx">NOMINATION FACILITY</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="NEFT.aspx">SERVICE CHARGES</a>
+                                        </li>
+                                         
+                                    </ul>
+                                </li>
+
+
+                                  <li class="active">
+                                    <a href="#">Rate Of Interest</a>
+
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="RoiLoans.aspx">ROI LOANS</a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href="RoiDeposits.aspx">ROI DEPOSITS</a>
+                                        </li>
+
+                                        </ul>
+                                      </li>
+
+
+                                         <li class="active">
+                                    <a href="Finacial.aspx">Financial</a>
+
+                                     
+                                </li>
+
+                                         <li class="active">
+                                    <a href="Gallery.aspx">Gallery</a>
+
+                                    
+                                             <li class="active">
+                                    <a href="Bank-Contact.aspx">Contact</a>
+
+                                     
+                                </li>
+                                             </ul>
+
+                                            
+
+                                     
+                                
+
+                                         
+                                
+                        </nav>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </section>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer class="main-footer"  >
+            <!--Widgets Section-->
+
+
+            <div class="widgets-section">
+                <div class="container">
+                    <div class="row">
+                        <!--Big Column-->
+
+
+                        <article class="big-column col-md-6 col-sm-12 col-xs-12">
+                            <div class="row clearfix">
+                                <!--Footer Column-->
+
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget about-column">
+                                        <div class="section-title">
+                                            <h4>Contact Us</h4>
+                                        </div>
+
+
+                                        <div class="text">
+                                              <a href="#"> <p style="color: #999;">Urban Co-operative Bank Ltd.
+                                                                                          A-Block, Deen Dayal Puram, Pilibhit Road, District - Bareilly(U.P.)
+                                                                                         Pin No - 243122 India</p></a>
+                                            <a href="tel:5812311340"><p style="color: #999;"> 0581 - 2311340​</p></a>
+                                            <a href="tel:5812311340"><p style="color: #999;"> +91 98978 66225​</p></a>
+                                            <a href="tel:5812311340"><p style="color: #999;">Toll Free: +91 98978 66225​</p></a>
+                                            <a href="tel:5812311340"><p style="color: #999;"> Fax : 0581 - 2311340​</p></a>
+                                            <a href="tel:5812311340"><p style="color: #999;"> gm_ucb@ucblb.org</p></a>
+                                            <a href="https://mail.google.com/mail/u/0/#search/gm_ucb%40ucblb.org"><p style="color: #999;"> www.ucblb.org</p></a>
+                                        </div>
+ 
+                                    </div>
+                                </div>
+                                <!--Footer Column-->
+
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget link-column">
+                                        <div class="section-title">
+                                            <h4>Deposits & Loans    </h4>
+                                        </div>
+
+
+                                        <div class="widget-content">
+                                            <ul class="list" style="background-color: #2b2b2b;border-color: #2b2b2b;box-shadow: none;">
+                                                <li>
+                                                    <a href="SavingAccount.aspx">SAVING ACCOUNTS</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="CurrentAccount.aspx">CURRENT ACCOUNTS</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="BasicBankAccount.aspx">BASIC BANK ACCOUNT</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="DailyDepositScheme.aspx">DAILY DEPOSIT SCHEME</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="FixedDeposit.aspx">FIXED DEPOSIT</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="RoiLoans.aspx">LOANS AND ADVANCES</a>
+                                                </li>
+                                                
+                                                <a href="Admin/LoginAdmin.aspx" class="btn">LOGIN</a>
+                                                
+ 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!--Big Column-->
+
+                        <article class="big-column col-md-6 col-sm-12 col-xs-12">
+                            <div class="row clearfix">
+                                <!--Footer Column-->
+                                 <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget contact-column">
+                                        <div class="section-title">
+                                            <h4>Services</h4>
+                                        </div>
+
+
+                                        <ul class="contact-info">
+                                             
+
+                                            <a href="NEFT.aspx"><li>ATM SERVICE</li></a>
+
+
+                                            <a href="NEFT.aspx"><li> ECOMM, POS SERVICES</li></a>
+                                            <a href="NEFT.aspx"><li>  MOBILE BANKING</li></a>
+                                            <a href="NEFT.aspx"><li>  NOMINATION FACILITY</li></a>
+                                            <a href="NEFT.aspx"><li>  SERVICE CHARGES</li></a>
+                                            <a href="NEFT.aspx"><li>  NEFT/RTGS</li></a>
+                                            <a href="NEFT.aspx"><li> LOCKER SERVICES</li></a>
+                                             
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget link-column">
+                                        <div class="section-title">
+                                            <h4>Useful Links</h4>
+                                        </div>
+
+
+                                        <div class="widget-content">
+                                            <ul class="list" style="background-color: #2b2b2b;border-color: #2b2b2b;box-shadow: none;">
+                                                <li>
+                                                    <a href="Finacial.aspx">FINANCIAL</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="EMI-Calculator.aspx">EMI CALCULATOR</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="TDCalculater.aspx">MATURITY CALCULATOR</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="RoiLoans.aspx">LOAN RATE</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="RoiDeposits.aspx">DEPOSIT RATES</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="AtmLocation.aspx">ATMS & BRANCHES</a>
+                                                </li>
+
+                                                <a href="https://play.google.com/store/apps/details?id=com.sil.ucobbank" class="btn"> Download Our Bank App</a>
+
+ 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Footer Column-->
+
+
+                                
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Footer Bottom-->
+
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="pull-left copy-text">
+                    <p><a href="#">Copyrights © 2023</a> All Rights Reserved. Powered by <a href="https://picar.co.in/">Picar Technologies</a></p>
+                </div>
+                 
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- Scroll Top  -->
+        <button class="scroll-top tran3s color2_bg"><span class="fa fa-angle-up"></span></button> <!-- preloader  -->
+
+
+        <div class="preloader">
+        </div>
+
+
+        <div class="donate-popup" id="donate-popup">
+            <div class="close-donate theme-btn">
+                <span class="fa fa-close"></span>
+            </div>
+
+
+             
+        </div>
+    </form>
+   <!-- jQuery -->
+        <script src="js/jquery.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <script src="js/menu.js">
+        </script>
+        <script src="js/owl.carousel.min.js">
+        </script>
+        <script src="js/jquery.mixitup.min.js">
+        </script>
+        <script src="js/jquery.fancybox.pack.js">
+        </script>
+        <script src="js/imagezoom.js">
+        </script>
+        <script src="js/jquery.magnific-popup.min.js">
+        </script>
+        <script src="js/jquery.polyglot.language.switcher.js">
+        </script>
+        <script src="js/SmoothScroll.js">
+        </script>
+        <script src="js/jquery.appear.js">
+        </script>
+        <script src="js/jquery.countTo.js">
+        </script>
+        <script src="js/validation.js">
+        </script>
+        <script src="js/wow.js">
+        </script>
+        <script src="js/jquery.fitvids.js">
+        </script>
+        <script src="js/nouislider.js">
+        </script> <!-- revolution slider js -->
+
+        <script src="js/rev-slider/jquery.themepunch.tools.min.js">
+        </script>
+        <script src="js/rev-slider/jquery.themepunch.revolution.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.actions.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.carousel.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.kenburn.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.layeranimation.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.migration.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.navigation.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.parallax.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.slideanims.min.js">
+        </script>
+        <script src="js/rev-slider/revolution.extension.video.min.js">
+        </script>
+        <script src="js/custom.js">
+        </script>
+</body>
+</html>

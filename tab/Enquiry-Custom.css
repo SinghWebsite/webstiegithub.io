@@ -1,0 +1,75 @@
+﻿.text1 {
+    border: 2px solid rgb(173, 204, 204);
+    height: 31px;
+    width: 90%;
+    box-shadow: 0px 0px 27px rgb(204, 204, 204) inset;
+    transition: 500ms all ease;
+    font-family: Verdana;
+    padding: 3px 3px 3px 3px;
+    margin: 4px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.TextBox:focus {
+    width: 220px;
+    transition: 500ms all ease;
+    padding: 3px 32px 3px 3px;
+}
+
+select {
+    width: 90%;
+    height: 29px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    font-weight: 200;
+    font-size: 12px;
+    margin: 2px;
+    font-family: Verdana;
+    box-shadow: 1px 1px 5px #CCC;
+    padding: 3px 3px 3px 3px;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+    select:hover {
+        width: 90%;
+        height: 29px;
+        border-radius: 3px;
+        border: 1px solid #CCC;
+        font-weight: 200;
+        font-size: 12px;
+        margin: 2px;
+        font-family: Verdana;
+        box-shadow: 1px 1px 5px #CCC;
+        padding: 3px 3px 3px 3px;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+.ButtonStyle {
+       width: 200px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    background-color: #02a9bb;
+    color: white;
+    font-weight: 200;
+    font-family: Verdana;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+    .ButtonStyle:hover {
+        width: 200px;
+        border-radius: 3px;
+        border: 1px solid #aaa;
+        padding: 8px;
+        font-weight: 200;
+        font-family: Verdana;
+        box-shadow: 1px 1px 5px #CCC;
+    }
+
+.EnquiryBox {
+    height: 98%;
+}

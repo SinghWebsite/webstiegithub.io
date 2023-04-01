@@ -1,0 +1,1 @@
+$(document).ready(function(){$('#feedback-tab').click(function(event){event.stopPropagation();$("#feedback-form").toggle("slide");});$("#feedback-form").on("click",function(event){event.stopPropagation();});});$(document).on("click",function(){$("#feedback-form").hide("fast");});
